@@ -21,12 +21,13 @@ const App = () => {
 
   useEffect(() => {
     const fetchUsers = async () => {
-      const response = await fetch(`${apiUrl}${currentPage}/${size}`);
+      const response = await fetch(`${apiUrl}${currentPage}/10`);
       const data = await response.json();
       if (data.list.length > 0) {
         const usersWithImages = data.list.map((user) => ({
           ...user,
-          imageUrl: `https://picsum.photos/id/${user.id}/200`,
+
+          // imageUrl: fetch(`${apiUrl}$/user/${currentPage}/10`),
         }));
         setUsers([...users, ...usersWithImages]);
         setCurrentPage(currentPage + 1);
