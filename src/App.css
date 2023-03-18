@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  scroll-behavior: smooth;
+  font-size: 1.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background-color: rgb(255, 251, 255);
+  font-family: "Nunito", sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+p {
+  color: rgb(6, 0, 0);
+}
+.container {
+  display: grid;
+}
+
+.container__users {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px;
+  padding: 10px;
+}
+.friends {
+  display: grid;
+  margin-top: 70px;
+  padding: 30px;
+}
+.container__friends {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  border: 2px solid rgba(9, 47, 121, 1);
+  color: rgba(9, 47, 121, 1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn {
+  border: 1px solid rgb(215, 145, 222);
+  box-shadow: 0 0 2px rgb (215, 145, 222);
+  padding: 10px 20px;
+  background: transparent;
+  color: #333;
+  transition: background-color 0.8s ease, border-color 0.8s ease;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(9, 47, 121, 1) 0%,
+    rgba(93, 30, 134, 1) 41%,
+    rgba(177, 13, 146, 1) 73%,
+    rgba(187, 144, 22, 1) 97%
+  );
+  border-color: rgb(9, 47, 121);
+  color: #fff;
+  transition: background-color 0.8s ease, border-color 0.8s ease;
 }

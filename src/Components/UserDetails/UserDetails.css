@@ -1,0 +1,43 @@
+.user-details-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.user-details-container__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.usersRegalie img {
+  max-width: 300px;
+  max-height: 300px;
+  float: left;
+  border-radius: 14px 100px;
+  box-shadow: 3px 7px 15px rgb(58, 2, 137);
+  margin: 10px;
+  cursor: pointer;
+}
+
+.userAbout p {
+  margin: 10px;
+  padding: 5px;
+  border-bottom: 1px solid rgb(215, 145, 222);
+}
+.usersInform {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  margin-left: 20%;
+  font-size: 18px;
+  gap: 10px;
+  padding: 35px;
+  margin-left: 10px;
+}
+.items {
+  display: flex;
+  height: 300px;
+  padding: 30px;
+}
